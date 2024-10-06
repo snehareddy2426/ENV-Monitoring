@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Environmental Monitoring Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Environmental Monitoring Dashboard</h1>
+    </header>
+    <main>
+        <section class="data-container">
+            <div class="data-card">
+                <h2>Air Quality</h2>
+                <p id="airQuality">Loading...</p>
+            </div>
+            <div class="data-card">
+                <h2>Temperature</h2>
+                <p id="temperature">Loading...</p>
+            </div>
+            <div class="data-card">
+                <h2>Humidity</h2>
+                <p id="humidity">Loading...</p>
+            </div>
+            <div class="data-card">
+                <h2>Noise Level</h2>
+                <p id="noiseLevel">Loading...</p>
+            </div>
+        </section>
+        <button onclick="refreshData()">Refresh Data</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
